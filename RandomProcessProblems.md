@@ -75,4 +75,3 @@ Given P=U~(0,1) and $x_1,x_2,...,x_n$ are Bernoulli(p)
 
 
 
-
