@@ -70,9 +70,17 @@ Show that if a random variable has the "lack of memory" property, then it must b
 TODO: Fill in with Cauchy Random Variable Experiment and discussion
 
 ## Problem 7
-P=U~(0,1) and $x_1,x_2,...,x_n$ are Bernoulli(p)
-Conditioned on P=p, $x_1$ though $x_n$ are iid.
-What is the the distribution of $x_1$ through $x_n$? What is the expectation of P given $x_1$ though $x_n$ are iid.
+- Let \( P \sim U(0,1) \) be a random variable.
+- Let \( x_1, x_2, \dots, x_n \) be random variables such that, conditioned on \( P = p \), they are independent and identically distributed (iid) Bernoulli random variables with parameter \( p \).
+  - That is, conditioned on \( P = p \), we have:
+    \[
+    x_i | P = p \sim \text{Bernoulli}(p) \quad \text{for } i = 1, 2, \dots, n.
+    \]
+
+1. What is the distribution of \( x_1, x_2, \dots, x_n \) conditioned on \( P = p \)?
+2. What is \( \mathbb{E}[P | x_1, x_2, \dots, x_n] \)?
+
+**Note:** Without conditioning on \( P \), the \( x_1, x_2, \dots, x_n \) are exchangeable, but not independent.
 
 
 
