@@ -73,11 +73,11 @@ TODO: Fill in with Cauchy Random Variable Experiment and discussion
 - Let $\( P \sim U(0,1) \)$ be a random variable.
 - Let $\( x_1, x_2, \dots, x_n \)$ be random variables such that, conditioned on $\( P = p \)$, they are independent and identically distributed (iid) Bernoulli random variables with parameter \( p \).
   - That is, conditioned on $\( P = p \)$, we have:
-    $
+$$
     \[
     x_i | P = p \sim \text{Bernoulli}(p) \quad \text{for } i = 1, 2, \dots, n.
     \]
-    $
+$$
 1. What is the distribution of $\( x_1, x_2, \dots, x_n \)$ conditioned on $\( P = p \)$?
 2. What is $\( \mathbb{E}[P | x_1, x_2, \dots, x_n] \)$?
 
