@@ -67,7 +67,7 @@ Show that the exponential variable also has the "lack of memory" property. This 
 Show that if a random variable has the "lack of memory" property, then it must be a geometric random variable or an exponential random variable
 
 ## Problem 6
-
+![Problem 6 image][https://raw.githubusercontent.com/manloloy/Problems/refs/heads/main/Images/photon.png]
 
 ## Problem 7
 - Let $\( P \sim U(0,1) \)$ be a random variable.
