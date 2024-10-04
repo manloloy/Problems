@@ -28,12 +28,14 @@ $$
 
 ## Problem 4
 Given the following context tree
+```
         Root
         /  \
       0     1
     B(3/4)  /  \
            0 (01)  1 (11)
         B(1/3)   B(1/4)
+```
 
 
 - Root → 0: Bernoulli(3/4) means that after observing a 0, the next bit has a 3/4 chance of being 1.
@@ -41,12 +43,14 @@ Given the following context tree
 - Suffix 11: Bernoulli(1/4) means that after observing 11, the next bit has a 1/4 chance of being 1.
 
 The extended tree is shown below.
+```
             Root
         /         \
       0            1
     /   \         /  \
   0 (00) 1 (10) 0 (01)  1 (11)
   B(3/4) B(3/4) B(1/3)  B(1/4)
+```
 
 Write out the Transition Matrix and solve the Statrionary probabilities P(0) and P(1)
 
