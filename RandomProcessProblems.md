@@ -71,8 +71,8 @@ TODO: Fill in with Cauchy Random Variable Experiment and discussion
 
 ## Problem 7
 P=U~(0,1) and $x_1,x_2,...,x_n$ are Bernoulli(p)
-x_1 though x_n are iid if P=p.
-What is the the distribution of x_1 through x_n? What is it's expectation?
+$x_1$ though $x_n$ are iid Conditioned on P=p.
+What is the the distribution of $x_1$ through $x_n$? What is it's expectation?
 
 
 
