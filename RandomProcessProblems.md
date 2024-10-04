@@ -79,7 +79,7 @@ TODO: Fill in with Cauchy Random Variable Experiment and discussion
 1. What is the distribution of $\( x_1, x_2, \dots, x_n \)$ conditioned on $\( P = p \)$?
 2. What is $\( \mathbb{E}[P | x_1, x_2, \dots, x_n] \)$?
 
-**Note:** Without conditioning on \( P \), the \( x_1, x_2, \dots, x_n \) are exchangeable, but not independent.
+**Note:** Without conditioning on $\( P \)$, the $\( x_1, x_2, \dots, x_n \)$ are exchangeable, but not independent.
 
 
 
