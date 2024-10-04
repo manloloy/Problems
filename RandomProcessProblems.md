@@ -80,19 +80,16 @@ We try to determine \( p \) by taking the average position over \( n \) photons.
 Solve the following problems:
 
 1. Show that \( X \) is distributed as a Cauchy variable with PDF:
-$$
-   \[
+
+   $$\[
    f_X(x) = \frac{1}{\pi} \frac{d}{(x - p)^2 + d^2}
-   \]
-$$
+   \]$$
 3. Argue that:
-$$
-   \[
+   $$\[
    \lim_{a \to \infty} \int_{-a}^{a} x f_X(x) \, dx = p
    \quad \text{and} \quad
    \lim_{a \to \infty} \int_{-a}^{a} |x| f_X(x) \, dx = \infty
-   \]
-$$
+   \]$$
    Thus, we can calculate a meaningful expectation, although the expectation is not mathematically well-defined. What does that mean in practice? To investigate this, perform the following computer experiment using MATLAB or Python. In the following, set $\( d = 1 \)$ and $\( p = 0 \)$.
 
 4. Use a random number generator to generate $\( n \)$ outcomes of the random variable $\( X \)$, and calculate their average. Repeat this experiment 100 times, each time with $\( n \)$ different samples, and plot the 100 different averages. Do the experiment for different values of $\( n \)$ (between 100 and 100,000). When $\( n \)$ is large, we would expect the average to approximately equal $\( p \)$. Is this true?
