@@ -69,6 +69,37 @@ Show that if a random variable has the "lack of memory" property, then it must b
 ## Problem 6
 ![Problem 6 image](./Images/photon.png)
 
+We consider the following physical experiment. A (low-energy) light source is at some unknown position \( p \). By capturing the photons emitted by the light source, we want to find its position \( p \). The experimental setup is shown in the figure above. We only consider the position estimation in one dimension. The light source emits photons in a random direction, with any direction equally probable. A photon emitted with an angle \( \theta \in (-\frac{\pi}{2}, \frac{\pi}{2}) \) impinges on a photosensitive plate (e.g., a one-dimensional CCD array). Whenever a photon arrives, its arrival position \( X \) is registered. The photons that do not hit the plate are disregarded. We assume that:
+
+- All emitted photons with \( \theta \in (-\frac{\pi}{2}, \frac{\pi}{2}) \) are detected.
+- The plate is infinitely long (both upwards and downwards).
+- The position of arrival is detected with no uncertainty.
+
+We try to determine \( p \) by taking the average position over \( n \) photons.
+
+Solve the following problems:
+
+1. Show that \( X \) is distributed as a Cauchy variable with PDF:
+
+   \[
+   f_X(x) = \frac{1}{\pi} \frac{d}{(x - p)^2 + d^2}
+   \]
+
+2. Argue that:
+
+   \[
+   \lim_{a \to \infty} \int_{-a}^{a} x f_X(x) \, dx = p
+   \quad \text{and} \quad
+   \lim_{a \to \infty} \int_{-a}^{a} |x| f_X(x) \, dx = \infty
+   \]
+
+   Thus, we can calculate a meaningful expectation, although the expectation is not mathematically well-defined. What does that mean in practice? To investigate this, perform the following computer experiment using MATLAB or Python. In the following, set \( d = 1 \) and \( p = 0 \).
+
+3. Use a random number generator to generate \( n \) outcomes of the random variable \( X \), and calculate their average. Repeat this experiment 100 times, each time with \( n \) different samples, and plot the 100 different averages. Do the experiment for different values of \( n \) (between 100 and 100,000). When \( n \) is large, we would expect the average to approximately equal \( p \). Is this true?
+
+4. For comparison, repeat question 3, but let \( X \) be Gaussian distributed (we only use this for comparison; the Gaussian distribution has nothing to do with the physical experiment). When \( n \) is large, is the average approximately equal to \( p \)?
+
+
 ## Problem 7
 - Let $\( P \sim U(0,1) \)$ be a random variable.
 - Let $\( x_1, x_2, \dots, x_n \)$ be random variables such that, conditioned on $\( P = p \)$, they are independent and identically distributed (iid) Bernoulli random variables with parameter \( p \).
