@@ -10,3 +10,12 @@ plane.
 3. Consider the even B: “Student is asleep more than he is awake.” Specify the set B and sketch it on
 the on the x-y plane.
 4. Sketch the region corresponding to the event Ac \ B and describe the corresponding event in words.
+
+
+## Problem 2
+For \( A_1, A_2, \dots, A_n \in \mathcal{F} \), show that
+
+\[
+P\left( \bigcup_{i=1}^{n} A_i \right) \leq \sum_{i=1}^{n} P(A_i)
+\]
+
