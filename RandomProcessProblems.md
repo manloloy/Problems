@@ -70,7 +70,7 @@ Show that if a random variable has the "lack of memory" property, then it must b
 TODO: Fill in with Cauchy Random Variable Experiment and discussion
 
 ## Problem 7
-Given P=U~(0,1) and $x_1,x_2,...,x_n$ are Bernoulli(p)$
+Given P=U~(0,1) and $x_1,x_2,...,x_n$ are Bernoulli(p)
 
 
 
