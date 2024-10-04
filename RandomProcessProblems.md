@@ -9,7 +9,7 @@ the random experiment are the pairs (T1, T2).
 plane.
 3. Consider the even B: “Student is asleep more than he is awake.” Specify the set B and sketch it on
 the on the x-y plane.
-4. Sketch the region corresponding to the event Ac \ B and describe the corresponding event in words.
+4. Sketch the region corresponding to the event $A^c \cap B$ and describe the corresponding event in words.
 
 
 ## Problem 2
@@ -78,8 +78,6 @@ TODO: Fill in with Cauchy Random Variable Experiment and discussion
     \]$$
 1. What is the distribution of $\( x_1, x_2, \dots, x_n \)$ conditioned on $\( P = p \)$?
 2. What is $\( \mathbb{E}[P | x_1, x_2, \dots, x_n] \)$?
-
-**Note:** Without conditioning on $\( P \)$, the $\( x_1, x_2, \dots, x_n \)$ are exchangeable, but not independent.
 
 
 
