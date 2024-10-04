@@ -69,7 +69,7 @@ Show that if a random variable has the "lack of memory" property, then it must b
 ## Problem 6
 ![Problem 6 image](./Images/photon.png)
 
-We consider the following physical experiment. A (low-energy) light source is at some unknown position $\( p \)$. By capturing the photons emitted by the light source, we want to find its position $\( p \)$. The experimental setup is shown in the figure above. We only consider the position estimation in one dimension. The light source emits photons in a random direction, with any direction equally probable. A photon emitted with an angle $\( \theta \in (-\frac{\pi}{2}, \frac{\pi}{2}) \)$ impinges on a photosensitive plate (e.g., a one-dimensional CCD array). Whenever a photon arrives, its arrival position $\( X \)$ is registered. The photons that do not hit the plate are disregarded. We assume that:
+We consider the following physical experiment. A (low-energy) light source is at some unknown position $p$. By capturing the photons emitted by the light source, we want to find its position $\( p \)$. The experimental setup is shown in the figure above. We only consider the position estimation in one dimension. The light source emits photons in a random direction, with any direction equally probable. A photon emitted with an angle $\( \theta \in (-\frac{\pi}{2}, \frac{\pi}{2}) \)$ impinges on a photosensitive plate (e.g., a one-dimensional CCD array). Whenever a photon arrives, its arrival position $\( X \)$ is registered. The photons that do not hit the plate are disregarded. We assume that:
 
 - All emitted photons with $\( \theta \in (-\frac{\pi}{2}, \frac{\pi}{2}) \)$ are detected.
 - The plate is infinitely long (both upwards and downwards).
