@@ -63,6 +63,13 @@ Why do you think that this is called the "lack of memory" property? Does any oth
 ## Problem 5b
 Show that the exponential variable also has the "lack of memory" property. This is similar to problem 5
 
+
+## Problem 6
+TODO: Fill in with Cauchy Random Variable Experiment and discussion
+
+## Problem 7
+Given P=U~(0,1) $x_1,....x_n$ are Bernoulli(p)
+
 ## Problem 5c
 Show that if a random variable has the "lack of memory" property, then it must be a geometric random variable or an exponential random variable
 
