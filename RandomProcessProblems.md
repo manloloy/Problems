@@ -21,7 +21,6 @@ $$
 
 ## Probelem 3
 Let $A_1, A_2, \dots, A_n$ be events where $n \geq 2$, and prove that
-
 $$
 P\left( \bigcup_{i=1}^{n} A_i \right) = \sum_i P(A_i) - \sum_{i<j} P(A_i \cap A_j) + \sum_{i<j<k} P(A_i \cap A_j \cap A_k)- \cdots + (-1)^{n+1} P(A_1 \cap A_2 \cap \cdots \cap A_n)
 $$
