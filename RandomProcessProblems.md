@@ -13,9 +13,12 @@ the on the x-y plane.
 
 
 ## Problem 2
-For \( A_1, A_2, \dots, A_n \in \mathcal{F} \), show that
+For $A_1, A_2, \dots, A_n \in \mathcal{F}$, show that
 
-\[
+$$
 P\left( \bigcup_{i=1}^{n} A_i \right) \leq \sum_{i=1}^{n} P(A_i)
-\]
+$$
+
+
+
 
