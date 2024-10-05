@@ -101,9 +101,9 @@ accurate. Does our results for the ideal case still tell us something about the 
 data?
 
 ## Problem 7
-- Let $\( P \sim U(0,1) \)$ be a random variable.
-- Let $\( X_1, X2, \dots, X_n \)$ be random variables such that, conditioned on $\( P = p \)$, they are independent and identically distributed (iid) Bernoulli random variables with parameter \( p \).
-  - That is, conditioned on $\( P = p \)$, we have:
+- Let $P \sim U(0,1)$ be a random variable.
+- Let $X_1, X2, \dots, X_n$ be random variables such that, conditioned on $P = p$, they are independent and identically distributed (iid) Bernoulli random variables with parameter p.
+  - That is, conditioned on $P = p$, we have:
     $$\[
     X_i | P = p \sim \text{Bernoulli}(p) \quad \text{for } i = 1, 2, \dots, n.
     \]$$
