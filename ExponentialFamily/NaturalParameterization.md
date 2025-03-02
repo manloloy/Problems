@@ -30,7 +30,6 @@ $$
 p(x \mid p) = p^x (1 - p)^{1-x}, \quad x \in \{0,1\}
 $$
 
-### **Step 1: Take the Log**
 Taking the logarithm,
 
 $$
@@ -47,7 +46,6 @@ $$
 = x \log \frac{p}{1 - p} + \log (1 - p)
 $$
 
-### **Step 2: Identify Exponential Family Components**
 Comparing with the log form:
 
 $$
@@ -58,13 +56,8 @@ we recognize:
 - **Natural Parameter:** $\eta = \log \frac{p}{1 - p}$ (log-odds)
 - **Sufficient Statistic:** $T(x) = x$
 - **Base Measure:** $h(x) = 1$
-- **Log-Partition Function:** 
+- **Log-Partition Function:** $A(\eta) = \log(1 + e^\eta)$
 
-$$
-A(\eta) = \log(1 + e^\eta)
-$$
-
-### **Final Form**
 $$
 p(x \mid \eta) = \exp \left( x\eta - \log(1 + e^\eta) \right)
 $$
@@ -79,14 +72,12 @@ $$
 p(x \mid \lambda) = \frac{\lambda^x e^{-\lambda}}{x!}, \quad x \in \mathbb{N}
 $$
 
-### **Step 1: Take the Log**
 Taking the logarithm,
 
 $$
 \log p(x \mid \lambda) = x \log \lambda - \lambda - \log x!
 $$
 
-### **Step 2: Identify Exponential Family Components**
 Comparing with the log form:
 
 $$
@@ -97,13 +88,8 @@ we recognize:
 - **Natural Parameter:** $\eta = \log \lambda$
 - **Sufficient Statistic:** $T(x) = x$
 - **Base Measure:** $h(x) = \frac{1}{x!}$
-- **Log-Partition Function:** 
+- **Log-Partition Function:** $A(\eta) = e^\eta$
 
-$$
-A(\eta) = e^\eta
-$$
-
-### **Final Form**
 $$
 p(x \mid \eta) = \frac{1}{x!} \exp \left( x\eta - e^\eta \right)
 $$
@@ -118,7 +104,6 @@ $$
 p(x \mid \mu, \sigma^2) = \frac{1}{\sqrt{2\pi \sigma^2}} \exp \left( -\frac{(x - \mu)^2}{2\sigma^2} \right)
 $$
 
-### **Step 1: Expand the Exponent**
 Rewriting the quadratic term,
 
 $$
@@ -135,7 +120,6 @@ $$
 \log p(x \mid \mu, \sigma^2) = -\frac{x^2}{2\sigma^2} + \frac{\mu x}{\sigma^2} - \frac{\mu^2}{2\sigma^2} - \frac{1}{2} \log (2\pi \sigma^2)
 $$
 
-### **Step 2: Identify Exponential Family Components**
 Comparing with the log form:
 
 $$
@@ -154,26 +138,6 @@ $$
 A(\eta_1, \eta_2) = -\frac{\eta_1^2}{4\eta_2} + \frac{1}{2} \log \left(-\frac{\pi}{\eta_2} \right)
 $$
 
-### **Final Form**
 $$
 p(x \mid \eta) = \exp \left( \eta_1 x + \eta_2 x^2 - A(\eta_1, \eta_2) \right)
 $$
-
----
-
-## **Conclusion**
-For each distribution, we derived:
-
-1. **Bernoulli**:
-   - $\eta = \log \frac{p}{1 - p}$
-   - $A(\eta) = \log(1 + e^\eta)$
-
-2. **Poisson**:
-   - $\eta = \log \lambda$
-   - $A(\eta) = e^\eta$
-
-3. **Gaussian**:
-   - $\eta_1 = \frac{\mu}{\sigma^2}, \quad \eta_2 = -\frac{1}{2\sigma^2}$
-   - $A(\eta_1, \eta_2) = -\frac{\eta_1^2}{4\eta_2} + \frac{1}{2} \log \left(-\frac{\pi}{\eta_2} \right)$
-
-This demonstrates how the exponential family formulation provides a unified way to express these distributions using natural parameters and sufficient statistics.
