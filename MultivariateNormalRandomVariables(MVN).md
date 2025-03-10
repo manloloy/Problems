@@ -211,7 +211,3 @@ f_X(x) = \frac{1}{(2\pi)^{n/2} \sqrt{\det(K)}}
 $$
 
 This derivation shows that whitening is indeed central to proving the form of the multivariate normal PDF.
-
----
-
-*End of Document*
