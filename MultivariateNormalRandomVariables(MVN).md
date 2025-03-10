@@ -1,7 +1,5 @@
 # Proof of the Multivariate Normal PDF
 
-## 1. Introduction
-
 Let $X \in \mathbb{R}^n$ be a random vector with a multivariate normal distribution, denoted as
 
 $$
@@ -19,7 +17,7 @@ f_X(x) = \frac{1}{(2\pi)^{n/2} \sqrt{\det(K)}}
 \exp \left( -\frac{1}{2} (x - m)^T K^{-1} (x - m) \right).
 $$
 
-## 2. The Univariate Normal Case
+## The Univariate Normal Case
 
 Recall that for a univariate normal random variable $X \sim \mathcal{N}(\mu,\sigma^2)$, the PDF is
 
@@ -30,7 +28,7 @@ $$
 
 This simple case will serve as the foundation for the multivariate generalization.
 
-## 3. Independent Normal Variables
+## Independent Normal Variables
 
 If $X = \begin{bmatrix} X_1 \\ X_2 \\ \vdots \\ X_n \end{bmatrix}$ is a vector of **independent** normal random variables with
 
@@ -67,7 +65,7 @@ $$
 
 This derivation holds when $K$ is diagonal (i.e., the $X_i$ are independent).
 
-## 4. Whitening Transformation for the General Case
+## Whitening Transformation for the General Case
 
 For a general multivariate normal vector $X \sim \mathcal{N}(m, K)$, the covariance matrix $K$ is not necessarily diagonal. 
 However, since $K$ is symmetric and positive definite, it can be decomposed using its eigenvalue decomposition:
@@ -112,7 +110,7 @@ $$
 
 Thus, $Z \sim \mathcal{N}(0, I)$, meaning that $Z$ is a standard multivariate normal vector with **independent** components.
 
-### 4.2 The PDF of $Z$
+### The PDF of $Z$
 
 Since the components of $Z$ are independent standard normals, its joint PDF is
 
@@ -134,7 +132,7 @@ $$
 X = Q \Lambda^{1/2} Z + m.
 $$
 
-### 5.1 Jacobian of the Transformation
+### Jacobian of the Transformation
 
 The transformation $X = Q \Lambda^{1/2} Z + m$ is linear, and its Jacobian determinant is given by the absolute value of the determinant of the transformation matrix:
 
@@ -148,7 +146,7 @@ $$
 |\det(Q \Lambda^{1/2})| = |\det(\Lambda^{1/2})| = \sqrt{\det(\Lambda)} = \sqrt{\det(K)}.
 $$
 
-### 5.2 Applying the Change of Variables Formula
+### Applying the Change of Variables Formula
 
 The change of variables formula for densities tells us that
 
