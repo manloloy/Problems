@@ -1,6 +1,4 @@
-# Proof of the Multivariate Normal PDF via Whitening
-
-This document presents a full mathematical derivation of the multivariate normal (MVN) probability density function (PDF) using the whitening (eigenvalue decomposition) method.
+# Proof of the Multivariate Normal PDF
 
 ## 1. Introduction
 
@@ -193,21 +191,5 @@ f_X(x) = \frac{1}{(2\pi)^{n/2} \sqrt{\det(K)}}
 \exp \left( -\frac{1}{2} (x-m)^T K^{-1} (x-m) \right).
 $$
 
-This completes the proof of the multivariate normal PDF.
 
-## 6. Conclusion
 
-We have derived the multivariate normal density by:
-1. Starting from the univariate normal density.
-2. Extending the result to independent normal variables.
-3. Applying a whitening transformation (via eigenvalue decomposition) to convert a general covariance matrix $K$ into the identity.
-4. Using the change of variables formula (including the Jacobian) to obtain the final PDF.
-
-The final result is:
-
-$$
-f_X(x) = \frac{1}{(2\pi)^{n/2} \sqrt{\det(K)}}
-\exp \left( -\frac{1}{2} (x-m)^T K^{-1} (x-m) \right).
-$$
-
-This derivation shows that whitening is indeed central to proving the form of the multivariate normal PDF.
