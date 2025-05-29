@@ -57,7 +57,8 @@ $$
      =
      \sigma\!\Bigl(2\sum_{j\in N(i)}\theta_{ij}\,x_j\Bigr),
 $$  
-   where \(\displaystyle\sigma(z)=\frac{1}{1+e^{-z}}\) is the logistic sigmoid.
+   
+   where $\displaystyle\sigma(z)=\frac{1}{1+e^{-z}}$ is the logistic sigmoid.
 
 ---
 
