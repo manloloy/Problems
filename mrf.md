@@ -63,4 +63,4 @@ $$
 ---
 
  
-Estimating the edge‐parameters \(\{\theta_{ij}\}\) of an Ising MRF reduces to fitting, for each node \(i\), a **sparse logistic regression** of \(x_i\) on its neighbors \(\{x_j: j\in N(i)\}\).
+Estimating the edge‐parameters $\{\theta_{ij}\}$ of an Ising MRF reduces to fitting, for each node $i$, a **sparse logistic regression** of $x_i$ on its neighbors $\{x_j: j\in N(i)\}$.
